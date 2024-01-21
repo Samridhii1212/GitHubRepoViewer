@@ -1,0 +1,147 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: rgb(86, 130, 145);
+    
+ }
+
+ body h2{
+     text-align: center;
+     color: #f8ecec;
+     margin-top: 120px;
+     font-size: 55px;
+     font-family: gabriola;
+ }
+ 
+
+
+ form {
+     max-width: 400px;
+     margin: 20px auto;
+     text-align: center;
+     margin-top: 60px;
+ }
+
+ input {
+     width: 95%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border:1px solid black;
+     background-color: rgb(174, 188, 195);
+ }
+
+ #searchbutton{
+     width: 100%;
+     padding: 10px;
+    background-color: rgb(17, 86, 95);
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     box-sizing: border-box;
+ }
+
+ #repo-box {
+        display: none;
+        margin: 20px auto;
+        max-width: 600px;
+        background: rgb(86, 130, 145);
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+ }
+ .dynamic-div {
+     margin: 10px 0;
+     padding: 10px;
+     background-color:rgb(22, 60, 79);
+     border: 1px solid #ddd;
+     border-radius: 4px;
+    
+ }
+ .dynamic-div h1 {
+     color: rgb(182, 167, 182);
+     font-size: 30px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+ }
+ h3
+ {
+    color:rgb(201, 191, 191);
+ }
+ p{
+    color: rgb(201, 191, 191);
+ }
+ .viewbutton
+ {
+    background-color: rgb(0, 113, 128);
+    width:50%;
+    padding: 10px;
+   color: #fff;
+   border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+ }
+.pagination
+{
+    background-color: rgb(160, 29, 29);
+    
+}
+label
+{
+    color:rgb(229, 228, 228);
+    margin-left: 1000px;
+    font-size: 20px;
+}
+#name
+{
+    color: rgb(229, 228, 228);
+    margin-left:50px;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+   
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ @media screen and (max-width: 600px) {
+     form {
+         max-width: 100%;
+     }
+
+     #repo-box {
+         max-width: 100%;
+         padding: 10px;
+     }
+ }

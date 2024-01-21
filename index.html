@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>GitHubRepoViewer</h2>
+
+    <div class="loader-container" id="loader-container">
+        <div class="loader"></div>
+    </div>
+    
+    <form>
+    <input type="text" id="username" placeholder="Github Username">
+    <button type="button" id="searchbutton" onclick="submitform()">Search</button>
+    <div id="name">By Samridhi Srivastav</div>
+    </form>
+    <div id="pagination">
+        <label for="pageSelect">Current Page:</label>
+        <select id="pageSelect" onchange="selectdata()">
+        </select>
+    </div>
+    
+
+    <div id="repo-box">
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
